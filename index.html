@@ -40,6 +40,39 @@
       justify-content: space-between;
     }
 
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .btn-shop {
+      background: radial-gradient(circle at 20% 0, #fff 0, #ffcc33 35%, #b38600 100%);
+      color: #020208;
+      border-radius: 999px;
+      padding: 0.55rem 1.2rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow:
+        0 0 12px rgba(255, 204, 51, 0.9),
+        0 0 28px rgba(255, 204, 51, 0.5);
+      transition: transform 0.12s ease-out, box-shadow 0.12s ease-out;
+    }
+
+    .btn-shop:hover {
+      transform: translateY(-1px);
+      box-shadow:
+        0 0 18px rgba(255, 204, 51, 1),
+        0 0 40px rgba(255, 204, 51, 0.8);
+      color: #020208;
+    }
+
     .logo {
       display: flex;
       align-items: center;
@@ -417,6 +450,10 @@
         align-items: flex-start;
         gap: 0.8rem;
       }
+      .header-left {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
       nav {
         font-size: 0.8rem;
       }
@@ -432,12 +469,15 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <div class="logo-mark"></div>
-      <div>
-        <div class="logo-text-main">KNG</div>
-        <div class="logo-text-sub">3D Printing</div>
+    <div class="header-left">
+      <div class="logo">
+        <div class="logo-mark"></div>
+        <div>
+          <div class="logo-text-main">KNG</div>
+          <div class="logo-text-sub">3D Printing</div>
+        </div>
       </div>
+      <a href="shop.html" class="btn-shop">Shop</a>
     </div>
     <nav>
       <a href="#about">About</a>
